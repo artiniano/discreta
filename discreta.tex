@@ -314,6 +314,9 @@ Al neutro aditivo de $\mathbb{Z}$ lo denotaremos por $0$. Es el único elemento 
 Con esto, podemos decir que $(\mathbb{Z}, +, \cdot)$ es un \textbf{anillo conmutativo y unitario}. Lo denominaremos \textbf{anillo de los enteros}.
 \end{definition}
 
+\begin{definition}Si un anillo conmutativo y unitario cumple además la propiedad cancelativa para el producto, es decir, que $ab = ac$ implique que $b = c$ con $a,b,c \in \mathbb{Z}$, entonces diremos que es un \textbf{dominio de integridad}.
+\end{definition}
+
 A partir de ahora siempre trabajaremos con anillos conmutativos y unitarios.
 
 Como todos los elementos de un anillo $A$ tienen inverso aditivo, se puede definir una operación de \textbf{\textit{resta}} en $A$: dados $a,b \in A$, entonces definiremos la resta como sigue: $$a-b = a+ (-b) \in A,$$ con $-b$ el inverso aditivo de $b$.
@@ -349,6 +352,20 @@ Además, el orden en $\mathbb{Z}$ cumple las siguientes propiedades:
 \end{proposition}
 
 Sin embargo, no va a ser válido un principio de buena ordenación como ocurre en $\mathbb{N}$, ya que el anillo de los enteros $\mathbb{Z}$ no tiene un elemento mínimo, pues para cada $a \in \mathbb{Z}$ tenemos que $a-1 < a$. Pero sí vamos a tener una propiedad análoga para ciertos subconjuntos:
+
+\begin{proposition}[\textbf{\textit{Principio de buena ordenación de los conjuntos minorados}}]Todo conjunto no vacío de números enteros acotado inferiormente posee un elemento mínimo. Es decir, dado $S \subseteq \mathbb{Z}$ no vacío tal que para algún $k \in \mathbb{Z}$ se tiene $k \leq n$ para todo $n \in S$, existe un elemento $m$ en $S$ tal que $m \leq n$ para todo $n\in S$.
+\end{proposition}
+
+Análogamente con el máximo: 
+
+\begin{proposition}[\textbf{\textit{Principio del máximo}}]Todo conjunto no vacío de números enteros acotado superiormente posee un elemento máximo. Es decir, dado $S \subseteq \mathbb{Z}$ no vacío tal que para algún $k \in \mathbb{Z}$ se tiene $k \geq n$ para todo $n \in S$, existe un elemento $m \in S$ tal que $m \geq n$ para todo $n \in S$.
+\end{proposition}
+
+Sin embargo, en $\mathbb{Z}$ no se cumple el principio de inducción sino una propiedad similar, aunque más débil:
+
+\begin{proposition}Un conjunto de números enteros que contenga un número $k$ y que con cada $n$ contenga a $n+1$, debe contener a todos los números enteros mayores o iguales que $k$. Es decir, dado $S \subseteq \mathbb{Z}$ tal que $k \in S$ y $n+1 \in S$ siempre que $n \in S$, se tiene $\lbrace n \in \mathbb{Z}: k\leq n \rbrace \subseteq S$.
+\end{proposition}
+
 \section{Combinatoria}
 \section{Grafos}
 \subsection{Generalidades}
